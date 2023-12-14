@@ -1,0 +1,1 @@
+export declare function geoLineIntersect(l0: [number, number, number][], l1: [number, number, number][]): import("@turf/helpers").FeatureCollection<import("@turf/helpers").Point, import("@turf/helpers").Properties>;

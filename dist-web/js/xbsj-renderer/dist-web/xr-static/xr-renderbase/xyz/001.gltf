@@ -1,0 +1,150 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "babylon.js glTF exporter for 3dsmax 2019 v20200721.1"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0,
+            "translation": [
+                0.0,
+                0.0,
+                -4.84287739E-08
+            ],
+            "rotation": [
+                -0.7071068,
+                -1.3767874E-07,
+                0.7071067,
+                -1.99496029E-07
+            ],
+            "scale": [
+                0.31767714,
+                0.31767714,
+                0.31767714
+            ],
+            "name": "Cylinder007"
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 1,
+                        "NORMAL": 2,
+                        "TEXCOORD_0": 3
+                    },
+                    "indices": 0,
+                    "material": 0
+                }
+            ],
+            "name": "Cylinder007"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5123,
+            "count": 1164,
+            "type": "SCALAR",
+            "name": "accessorIndices"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 1164,
+            "max": [
+                3.02216816,
+                0.1256822,
+                0.123772755
+            ],
+            "min": [
+                -0.125682041,
+                -3.02407742,
+                -3.02407765
+            ],
+            "type": "VEC3",
+            "name": "accessorPositions"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 13968,
+            "componentType": 5126,
+            "count": 1164,
+            "type": "VEC3",
+            "name": "accessorNormals"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 1164,
+            "type": "VEC2",
+            "name": "accessorUVs"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 2328,
+            "name": "bufferViewScalar"
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 2328,
+            "byteLength": 27936,
+            "byteStride": 12,
+            "name": "bufferViewFloatVec3"
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 30264,
+            "byteLength": 9312,
+            "byteStride": 8,
+            "name": "bufferViewFloatVec2"
+        }
+    ],
+    "buffers": [
+        {
+            "uri": "001.bin",
+            "byteLength": 39576
+        }
+    ],
+    "materials": [
+        {
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "metallicFactor": 0.0,
+                "roughnessFactor": 0.450053632
+            },
+            "name": "Material #119"
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0,
+            "name": "001.jpg"
+        }
+    ],
+    "images": [
+        {
+            "uri": "./001.jpg"
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ]
+}

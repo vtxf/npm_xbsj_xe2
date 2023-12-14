@@ -1,0 +1,1 @@
+export declare const PolygonHierarchyMd = "\n### PolygonHierarchyType\n```javascript\n\ntype PolygonHierarchyType = {\n    positions: [number, number, number][],\n    holes?: PolygonHierarchyType[],\n}\n\n```\n";

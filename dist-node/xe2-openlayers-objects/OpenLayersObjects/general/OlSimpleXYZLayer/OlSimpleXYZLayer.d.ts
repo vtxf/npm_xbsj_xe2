@@ -1,0 +1,150 @@
+import { ESSceneObject, PickedInfo } from "xbsj-xe2/dist-node/xe2-base-objects";
+import { Event, JsonValue, PartialWithUndefinedReactivePropsToNativeProps, ReactivePropsToNativePropsAndChanged } from "xbsj-xe2/dist-node/xe2-base-utils";
+import { SceneObjectKey } from "xbsj-xe2/dist-node/xe2-utils";
+export declare class OlSimpleXYZLayer extends ESSceneObject {
+    static readonly type: string;
+    get typeName(): string;
+    get defaultProps(): {
+        show: boolean | undefined;
+        attributions: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<string[] | undefined>;
+        attributionsCollapsible: boolean | undefined;
+        cacheSize: number | undefined;
+        crossOrigin: string | undefined;
+        interpolate: boolean | undefined;
+        projection: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<JsonValue>;
+        reprojectionErrorThreshold: number | undefined;
+        maxZoom: number | undefined;
+        minZoom: number | undefined;
+        opaque: boolean | undefined;
+        maxResolution: number | undefined;
+        tileSize: number | undefined;
+        gutter: number | undefined;
+        tileUrlFunction: string | undefined;
+        tileGrid: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<JsonValue>;
+        tileLoadFunction: string | undefined;
+        tilePixelRatio: number | undefined;
+        url: string | undefined;
+        urls: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<string[] | undefined>;
+        wrapX: boolean | undefined;
+        transition: number | undefined;
+        zDirection: number | undefined;
+        zIndex: number | undefined;
+        execOnceFuncStr: string | undefined;
+        updateFuncStr: string | undefined;
+        toDestroyFuncStr: string | undefined;
+        name: string;
+        ref: string | undefined;
+        devTags: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<string[] | undefined>;
+        extras: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<JsonValue>;
+    };
+    get json(): JsonType;
+    set json(value: JsonType);
+    private _pickedEvent;
+    get pickedEvent(): Event<[PickedInfo]>;
+    static description: {
+        colorLevel: string;
+        colorHSL: string;
+        curve: string;
+        brightness: string;
+        contrast: string;
+        url: string;
+        urls: string;
+        attributions: string;
+        attributionsCollapsible: string;
+        cacheSize: string;
+        crossOrigin: string;
+        interpolate: string;
+        opaque: string;
+        tileGrid: string;
+        projection: string;
+        reprojectionErrorThreshold: string;
+        maxZoom: string;
+        minZoom: string;
+        maxResolution: string;
+        tilePixelRatio: string;
+        tileLoadFunction: string;
+        wrapX: string;
+        tileSize: string;
+        gutter: string;
+        tileUrlFunction: string;
+        transition: string;
+        zDirection: string;
+    };
+    static default: {
+        colorLevel: {
+            shadow: number;
+            midtones: number;
+            highlight: number;
+            outputShadow: number;
+            outputHighlight: number;
+        };
+        colorHSL: {
+            hue: number;
+            saturation: number;
+            lightness: number;
+        };
+        curve: {
+            controlPoints: number[][];
+            points: number[][];
+            density: number;
+        };
+        brightness: number;
+        contrast: number;
+        maxZoom: number;
+        minZoom: number;
+        opaque: boolean;
+        tileSize: number;
+        gutter: number;
+        interpolate: boolean;
+        attributionsCollapsible: boolean;
+        reprojectionErrorThreshold: number;
+        tilePixelRatio: number;
+        tileLoadFunction: string;
+        wrapX: boolean;
+        transition: number;
+        zDirection: number;
+    };
+    constructor(id?: SceneObjectKey);
+    getProperties(language?: string): import("xbsj-xe2/dist-node/xe2-base-objects").Property[];
+}
+export declare namespace OlSimpleXYZLayer {
+    const createDefaultProps: () => {
+        show: boolean | undefined;
+        attributions: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<string[] | undefined>;
+        attributionsCollapsible: boolean | undefined;
+        cacheSize: number | undefined;
+        crossOrigin: string | undefined;
+        interpolate: boolean | undefined;
+        projection: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<JsonValue>;
+        reprojectionErrorThreshold: number | undefined;
+        maxZoom: number | undefined;
+        minZoom: number | undefined;
+        opaque: boolean | undefined;
+        maxResolution: number | undefined;
+        tileSize: number | undefined;
+        gutter: number | undefined;
+        tileUrlFunction: string | undefined;
+        tileGrid: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<JsonValue>;
+        tileLoadFunction: string | undefined;
+        tilePixelRatio: number | undefined;
+        url: string | undefined;
+        urls: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<string[] | undefined>;
+        wrapX: boolean | undefined;
+        transition: number | undefined;
+        zDirection: number | undefined;
+        zIndex: number | undefined;
+        execOnceFuncStr: string | undefined;
+        updateFuncStr: string | undefined;
+        toDestroyFuncStr: string | undefined;
+        name: string;
+        ref: string | undefined;
+        devTags: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<string[] | undefined>;
+        extras: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<JsonValue>;
+    };
+}
+export interface OlSimpleXYZLayer extends ReactivePropsToNativePropsAndChanged<ReturnType<typeof OlSimpleXYZLayer.createDefaultProps>> {
+}
+declare type JsonType = PartialWithUndefinedReactivePropsToNativeProps<ReturnType<typeof OlSimpleXYZLayer.createDefaultProps> & {
+    type: string;
+}>;
+export {};

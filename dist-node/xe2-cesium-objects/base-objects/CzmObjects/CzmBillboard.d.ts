@@ -1,0 +1,114 @@
+import { PickedInfo, PositionEditing } from "xbsj-xe2/dist-node/xe2-base-objects";
+import { Event, JsonValue, Listener, PartialWithUndefinedReactivePropsToNativeProps, ReactivePropsToNativePropsAndChanged } from "xbsj-xe2/dist-node/xe2-base-utils";
+import { SceneObjectKey } from "xbsj-xe2/dist-node/xe2-utils";
+import { ESSceneObject } from "xbsj-xe2/dist-node/xe2-base-objects";
+export declare class CzmBillboard extends ESSceneObject {
+    static readonly type: string;
+    get typeName(): string;
+    get defaultProps(): {
+        execOnceFuncStr: string | undefined;
+        updateFuncStr: string | undefined;
+        toDestroyFuncStr: string | undefined;
+        name: string;
+        ref: string | undefined;
+        devTags: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<string[] | undefined>;
+        extras: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<JsonValue>;
+        editing: boolean | undefined;
+        allowPicking: boolean | undefined;
+        show: boolean | undefined;
+        position: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<[number, number, number] | undefined>;
+        color: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<[number, number, number, number] | undefined>;
+        pixelOffset: [number, number] | undefined;
+        eyeOffset: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<[number, number, number] | undefined>;
+        heightReference: "NONE" | "CLAMP_TO_GROUND" | "RELATIVE_TO_GROUND" | undefined;
+        horizontalOrigin: "CENTER" | "LEFT" | "RIGHT" | undefined;
+        verticalOrigin: "CENTER" | "BOTTOM" | "BASELINE" | "TOP" | undefined;
+        scale: number | undefined;
+        image: string | undefined;
+        rotation: number | undefined;
+        alignedAxis: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<[number, number, number] | undefined>;
+        width: number | undefined;
+        height: number | undefined;
+        scaleByDistance: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<[number, number, number, number] | undefined>;
+        translucencyByDistance: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<[number, number, number, number] | undefined>;
+        pixelOffsetScaleByDistance: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<[number, number, number, number] | undefined>;
+        sizeInMeters: boolean | undefined;
+        distanceDisplayCondition: [number, number] | undefined;
+    };
+    get json(): JsonType;
+    set json(value: JsonType);
+    get geoJson(): JsonValue;
+    set geoJson(value: JsonValue);
+    get geoJsonStr(): string;
+    set geoJsonStr(value: string);
+    private _flyToEvent;
+    get flyToEvent(): Listener<[number | undefined]>;
+    flyTo(duration?: number): void;
+    private _pickedEvent;
+    get pickedEvent(): Event<[PickedInfo]>;
+    private _sPositionEditing;
+    get sPositionEditing(): PositionEditing;
+    constructor(id?: SceneObjectKey);
+    static defaults: {
+        image: string;
+        sizeInMeters: boolean;
+        editing: boolean;
+        allowPicking: boolean;
+        show: boolean;
+        color: [number, number, number, number];
+        heightReference: string;
+        horizontalOrigin: string;
+        verticalOrigin: string;
+        scaleByDistance: [number, number, number, number];
+        translucencyByDistance: [number, number, number, number];
+        pixelOffsetScaleByDistance: [number, number, number, number];
+        scale: number;
+        rotation: number;
+        alignedAxis: [number, number, number];
+        pixelOffset: [number, number];
+        eyeOffset: [number, number, number];
+        width: number;
+        height: number;
+        distanceDisplayCondition: [number, number];
+        viewerTagsEnums: [string, string][];
+    };
+    getProperties(language?: string): import("xbsj-xe2/dist-node/xe2-base-objects").Property[];
+}
+export declare namespace CzmBillboard {
+    const createDefaultProps: () => {
+        execOnceFuncStr: string | undefined;
+        updateFuncStr: string | undefined;
+        toDestroyFuncStr: string | undefined;
+        name: string;
+        ref: string | undefined;
+        devTags: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<string[] | undefined>;
+        extras: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<JsonValue>;
+        editing: boolean | undefined;
+        allowPicking: boolean | undefined;
+        show: boolean | undefined;
+        position: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<[number, number, number] | undefined>;
+        color: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<[number, number, number, number] | undefined>;
+        pixelOffset: [number, number] | undefined;
+        eyeOffset: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<[number, number, number] | undefined>;
+        heightReference: "NONE" | "CLAMP_TO_GROUND" | "RELATIVE_TO_GROUND" | undefined;
+        horizontalOrigin: "CENTER" | "LEFT" | "RIGHT" | undefined;
+        verticalOrigin: "CENTER" | "BOTTOM" | "BASELINE" | "TOP" | undefined;
+        scale: number | undefined;
+        image: string | undefined;
+        rotation: number | undefined;
+        alignedAxis: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<[number, number, number] | undefined>;
+        width: number | undefined;
+        height: number | undefined;
+        scaleByDistance: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<[number, number, number, number] | undefined>;
+        translucencyByDistance: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<[number, number, number, number] | undefined>;
+        pixelOffsetScaleByDistance: import("xbsj-xe2/dist-node/xe2-base-utils").ReactiveVariable<[number, number, number, number] | undefined>;
+        sizeInMeters: boolean | undefined;
+        distanceDisplayCondition: [number, number] | undefined;
+    };
+}
+export interface CzmBillboard extends ReactivePropsToNativePropsAndChanged<ReturnType<typeof CzmBillboard.createDefaultProps>> {
+}
+declare type JsonType = PartialWithUndefinedReactivePropsToNativeProps<ReturnType<typeof CzmBillboard.createDefaultProps> & {
+    type: string;
+}>;
+export {};
